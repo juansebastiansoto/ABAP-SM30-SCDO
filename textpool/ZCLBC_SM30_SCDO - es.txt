@@ -1,0 +1,39 @@
+CLASS     00001	SAP Changed Document in SM30	Modificaciones por SM30
+COMPO     00002	Add a single record into the TOTAL_TABLE	Agregar un registro en la TOTAL_TABLE
+COMPO     00003	Exist object? If was not set, is unique?	Existe el objeto? Si no existe, es único?
+COMPO     00004	Constructor	Constructor
+COMPO     00005	Create the dynamic table to convert the TOTAL table	Crea la tabla dinámica para convertir la tabla TOTAL
+COMPO     00006	Create the dynamic where for the READ_DATA_TABLE method	Crea el where dinámico para el método READ_DATA_TABLE
+COMPO     00007	Delete	Borrar
+COMPO     00008	Insert	Insertar
+COMPO     00009	Update	Actualizar
+COMPO     00010	Fill the key fields table	Llenar la tabla de campos claves
+COMPO     00011	Get WRITE_DOCUMENT function name	Obtener el nombre de la función WRITE_DOCUMENT
+COMPO     00013	Raise System Message Exception	Disparar mensajes de excepciones del sistema
+COMPO     00014	Read the data registry	Leer el registro de datos
+COMPO     00015	Get Table Definition	Obtener la definición de la tabla
+COMPO     00016	Save the data log into the CDHDR & CDPOS tables	Guardar el log de datos en las tablas CDHDR y CDPOS
+COMPO     00017	Table with Field Names of Key Figures	Tabla con el nombre de los campos claves
+COMPO     00018	Object class	Objeto
+COMPO     00019	Name of SAP table view	Nombre de la vista o tabla de SAP
+SUBCO     00020	Change Action	Acción de cambiar
+SUBCO     00022	SAP Changed Document in SM30 Exception Class	Clase de excepción de documentos de cambios en SAP por SM30
+SUBCO     00023	Exception Class with Error Messages from Table T100	Clase de excepción con mensaje de error de la tabla T100
+SUBCO     00024	Object class (obligatory if is not unique)	Objeto (obligatorio si no es único)
+SUBCO     00025	Name of SAP table view	Nombre de la vista o tabla de SAP
+SUBCO     00026	SAP Changed Document in SM30 Exception Class	Clase de excepción de documentos de cambios en SAP por SM30
+SUBCO     00027	Exception Class with Error Messages from Table T100	Clase de excepción con mensaje de error de la tabla T100
+SUBCO     00028	Table Type for Structure DD03P	Tipo tabla de la estructura DD03P
+SUBCO     00029	Exception Class with Error Messages from Table T100	Clase de excepción con mensaje de error de la tabla T100
+SUBCO     00030	Input data (new values)	Datos de entrada (valores nuevos)
+SUBCO     00031	Where condition	Condición WHERE
+SUBCO     00032	Table Type for Structure DD03P	Tipo tabla de la estructura DD03P
+SUBCO     00033	Name of Function Module	Nombre del módulo de función
+SUBCO     00034	Exception Class with Error Messages from Table T100	Clase de excepción con mensaje de error de la tabla T100
+SUBCO     00035	Exception Class with Error Messages from Table T100	Clase de excepción con mensaje de error de la tabla T100
+SUBCO     00036	Output data (old values)	Datos de salida (valores viejos)
+SUBCO     00037	Input data (new values)	Datos de entrada (valores nuevos)
+SUBCO     00038	Exception Class with Error Messages from Table T100	Clase de excepción con mensaje de error de la tabla T100
+SUBCO     00039	Table Type for Structure DD03P	Tipo tabla de la estructura DD03P
+SUBCO     00040	Exception Class with Error Messages from Table T100	Clase de excepción con mensaje de error de la tabla T100
+SUBCO     00041	SAP Changed Document in SM30 Exception Class	Clase de excepción de documentos de cambios en SAP por SM30
