@@ -5,13 +5,22 @@ Instantiation: Public
 **************************************************************************
 
 METHOD save_log.
+*----------------------------------------------------------------------*
+* Técnico:      Panzini, Sebastián
+* Fecha:        13.02.2020
+* Descripción:  Se modifica metodo para poder permitir ejecutar un
+*               objeto SCDO con mas de una tabla parametrizada
+*----------------------------------------------------------------------*
 
   DATA: ol_line               TYPE REF TO data,
-        ol_old_data           TYPE REF TO data.
+        ol_old_data           TYPE REF TO data,
+        ol_data               TYPE REF TO data.             "add by sp001
 
-  DATA: tl_function_import    TYPE abap_func_parmbind_tab.
+  DATA: tl_function_import    TYPE abap_func_parmbind_tab,
+        tl_tcdob              TYPE STANDARD TABLE OF tcdob. "add by sp001
 
-  DATA: wl_function_import    TYPE LINE OF abap_func_parmbind_tab.
+  DATA: wl_function_import    TYPE LINE OF abap_func_parmbind_tab,
+        wl_tcdob              TYPE tcdob.                   "add by sp001
 
   DATA: vl_key                TYPE LINE OF cf_t_fzwert,
         vl_objectid           TYPE cdhdr-objectid,
@@ -24,7 +33,9 @@ METHOD save_log.
                  <fsl_new>    TYPE ANY,
                  <fsl_old>    TYPE ANY,
                  <fsl_action> TYPE ANY,
-                 <fsl_key>    TYPE ANY.
+                 <fsl_key>    TYPE ANY,
+                 <fsl_structure> TYPE ANY.                   "add by sp001
+
 
 * Get the function name
   vl_function_name = me->get_function_name( ).
@@ -61,6 +72,8 @@ METHOD save_log.
 *   The Object ID is the key table concatenated
     wl_function_import-name = 'OBJECTID'.
     wl_function_import-kind = abap_func_exporting.
+
+    CLEAR: vl_offset.
 
     LOOP AT me->t_key INTO vl_key.
 
@@ -150,6 +163,41 @@ METHOD save_log.
     GET REFERENCE OF <fsl_old> INTO wl_function_import-value.
     INSERT wl_function_import INTO TABLE tl_function_import.
 
+*** BEGIN SP001
+*" Se consulta si el objeto SCDO tiene mas de una tabla asignada.
+    SELECT object tabname
+      INTO TABLE tl_tcdob
+      FROM tcdob
+      WHERE object EQ me->v_object
+        AND tabname NE me->v_viewname.
+    IF sy-subrc EQ 0 AND NOT tl_tcdob[] IS INITIAL.
+*" Se recorren las tablas y se cargan a la interfaz de la función
+      LOOP AT tl_tcdob INTO wl_tcdob.
+        CLEAR: ol_data.
+        CREATE DATA ol_data TYPE (wl_tcdob-tabname).
+        ASSIGN ol_data->* TO <fsl_structure>.
+
+*" New values
+        CLEAR: wl_function_import.
+        CONCATENATE 'N_'
+                    wl_tcdob-tabname
+        INTO wl_function_import-name.
+        wl_function_import-kind = abap_func_exporting.
+        GET REFERENCE OF <fsl_structure> INTO wl_function_import-value.
+        INSERT wl_function_import INTO TABLE tl_function_import.
+
+*" Old values
+        CLEAR: wl_function_import.
+        CONCATENATE 'O_'
+                    wl_tcdob-tabname
+        INTO wl_function_import-name.
+        wl_function_import-kind = abap_func_exporting.
+        GET REFERENCE OF <fsl_structure> INTO wl_function_import-value.
+        INSERT wl_function_import INTO TABLE tl_function_import.
+      ENDLOOP.
+    ENDIF.
+*** END SP001
+
 *   Call the function.
     CALL FUNCTION vl_function_name
       PARAMETER-TABLE
@@ -160,4 +208,4 @@ METHOD save_log.
 ENDMETHOD.
 
 ----------------------------------------------------------------------------------
-Extracted by Mass Download version 1.5.5 - E.G.Mellodew. 1998-2019. Sap Release 700
+Extracted by Mass Download version 1.5.5 - E.G.Mellodew. 1998-2020. Sap Release 700
