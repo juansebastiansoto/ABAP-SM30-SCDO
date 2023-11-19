@@ -1,5 +1,0 @@
-E919AB302C3E28F189F5005056B110AB	There are multiple change document object for &VIEWNAME&. You must set one.
-E919ABD6DF13FAF189F5005056B110AB	There are not change document object for &VIEWNAME&.
-E919ACA6BAAF9AF189F5005056B110AB	The object &OBJECT& has not generation object.
-E919ABD6DF13FBF189F5005056B110AB	The object &OBJECT& and the view &VIEWNAME& are not related.
-E919BBC3D5D58AF189F5005056B110AB	The WRITE_DOCUMENT function does not exist.

@@ -1,5 +1,0 @@
-E919AB302C3E28F189F5005056B110AB	Hay múltiples objetos de modificación para &VIEWNAME&. Debe indicar uno.
-E919ABD6DF13FAF189F5005056B110AB	No existe objeto de documento de cambio para &VIEWNAME&.
-E919ACA6BAAF9AF189F5005056B110AB	El objeto &OBJECT& no tiene objeto de generación.
-E919ABD6DF13FBF189F5005056B110AB	El objeto &OBJECT& y la vista &VIEWNAME& no están relacionados.
-E919BBC3D5D58AF189F5005056B110AB	La función WRITE_DOCUMENT no existe.

@@ -1,4 +1,0 @@
-CLASS     00001	SAP Changed Document in SM30 Exception Class	Clase de excepción de documentos de cambios en SAP por SM30
-COMPO     00002	CONSTRUCTOR	CONSTRUCTOR
-COMPO     00008	Object class	Objeto
-COMPO     00009	Name of SAP table view	Nombre de la vista o tabla de SAP
