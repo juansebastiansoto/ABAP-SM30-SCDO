@@ -25,9 +25,9 @@ SM30-SCDO is an object class to save changes in SCDO without much work.
 
 ## How can I install de SM30-SCDO Class?
 
-Download the nugget and import it with SAPLink.
+Clone the repo with abapGit.
 
-![Nugget IMport](http://rene.turnheim.com/wp/wp-content/uploads/2013/09/ZSAPLINK.png)
+# <a href="https://github.com/abapGit/"><img src="https://docs.abapgit.org/logo-dark.svg" alt="abapGit logo"></a>
 
 ## How can use it?
 
