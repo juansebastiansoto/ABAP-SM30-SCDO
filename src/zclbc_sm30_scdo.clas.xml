@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCLBC_SM30_SCDO</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>SAP Changed Document in SM30</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <RSTAT>K</RSTAT>
+    <MSG_ID>ZCA_SM30_SCDO</MSG_ID>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_RECORD_TABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Add a single record into the TOTAL_TABLE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_RECORD_TABLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Agrega un registro en TOTAL_TABLE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exist object? If was not set, is unique?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Existe el objeto? Si no, es único?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_DYNAMIC_TABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create the dynamic table to convert the TOTAL table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_DYNAMIC_TABLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Crear tabla dinámica para convertir la tabla TOTAL</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_DYNAMIC_WHERE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create the dynamic where for the READ_DATA_TABLE method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_DYNAMIC_WHERE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Crear el WHERE dinámico con los datos de READ_DATA_TABLE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_DELETE_ACTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Delete</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_DELETE_ACTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Borrar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_INSERT_ACTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Insert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_INSERT_ACTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Insertar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_UPDATE_ACTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Update</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_UPDATE_ACTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Actualizar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FILL_KEY_FIELDS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill the key fields table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FILL_KEY_FIELDS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Llenar los campos clave de la tabla</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_FUNCTION_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get WRITE_DOCUMENT function name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_FUNCTION_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener el nombre de la función WRITE_DOCUMENT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RAISE_SYSTEM_EXCEPTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Raise System Message Exception</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RAISE_SYSTEM_EXCEPTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Lanzar mensaje del sistema como excepción</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ_DATA_TABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read the data registry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ_DATA_TABLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Leer los datos del registro</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ_TABL_DEF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Table Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ_TABL_DEF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Leer la definición de la tabla</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SAVE_LOG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Save the data log into the CDHDR &amp; CDPOS tables</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SAVE_LOG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Grabar el log de datos en las tablas CDHDR y CDPOS</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>T_KEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table with Field Names of Key Figures</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>T_KEY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Tabla con los campos claves</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>V_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>V_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Objecto de SCDO</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>V_VIEWNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of SAP table view</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>V_VIEWNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Nombre de la vista de la tabla de SAP</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_RECORD_TABLE</CMPNAME>
+     <SCONAME>IM_ACTION</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Change Action</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_RECORD_TABLE</CMPNAME>
+     <SCONAME>IM_ACTION</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Acción</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHECK_OBJECT</CMPNAME>
+     <SCONAME>ZCX_SM30_SCDO</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>SAP Changed Document in SM30 Exception Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHECK_OBJECT</CMPNAME>
+     <SCONAME>ZCX_SM30_SCDO</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Clase de excepción para el documento de cambio SAP en SM30</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>CX_T100_MSG</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exception Class with Error Messages from Table T100</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>CX_T100_MSG</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Clase de excepción con mensaje de error de la tabla T100</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IM_OBJECT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object class (obligatory if is not unique)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IM_OBJECT</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Objeto (obligatorio si no es único)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IM_VIEWNAME</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of SAP table view</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IM_VIEWNAME</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Nombre de la vista de la tabla de SAP</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>ZCX_SM30_SCDO</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>SAP Changed Document in SM30 Exception Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>ZCX_SM30_SCDO</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Clase de excepción para el documento de cambio SAP en SM30</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_DYNAMIC_TABLE</CMPNAME>
+     <SCONAME>CX_T100_MSG</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exception Class with Error Messages from Table T100</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_DYNAMIC_TABLE</CMPNAME>
+     <SCONAME>CX_T100_MSG</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Clase de excepción con mensaje de error de la tabla T100</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_DYNAMIC_TABLE</CMPNAME>
+     <SCONAME>IM_TABLE_DEFINITION</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type for Structure DD03P</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_DYNAMIC_TABLE</CMPNAME>
+     <SCONAME>IM_TABLE_DEFINITION</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Tipo tabla para la estructura DD03P</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_DYNAMIC_WHERE</CMPNAME>
+     <SCONAME>CX_T100_MSG</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exception Class with Error Messages from Table T100</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_DYNAMIC_WHERE</CMPNAME>
+     <SCONAME>CX_T100_MSG</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Clase de excepción con mensaje de error de la tabla T100</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_DYNAMIC_WHERE</CMPNAME>
+     <SCONAME>IM_INPUT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Input data (new values)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_DYNAMIC_WHERE</CMPNAME>
+     <SCONAME>IM_INPUT</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Datos de entrada (valores nuevos)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_DYNAMIC_WHERE</CMPNAME>
+     <SCONAME>RE_WHERE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Where condition</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_DYNAMIC_WHERE</CMPNAME>
+     <SCONAME>RE_WHERE</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Condición de filtrado</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FILL_KEY_FIELDS</CMPNAME>
+     <SCONAME>IM_TABLE_DEFINITION</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type for Structure DD03P</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FILL_KEY_FIELDS</CMPNAME>
+     <SCONAME>IM_TABLE_DEFINITION</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Tipo tabla para la estructura DD03P</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_FUNCTION_NAME</CMPNAME>
+     <SCONAME>RE_FUNCTION_NAME</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of Function Module</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_FUNCTION_NAME</CMPNAME>
+     <SCONAME>RE_FUNCTION_NAME</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Nombre del módulo de función</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_SYSTEM_EXCEPTION</CMPNAME>
+     <SCONAME>CX_T100_MSG</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exception Class with Error Messages from Table T100</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_SYSTEM_EXCEPTION</CMPNAME>
+     <SCONAME>CX_T100_MSG</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Clase de excepción con mensaje de error de la tabla T100</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DATA_TABLE</CMPNAME>
+     <SCONAME>CX_T100_MSG</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exception Class with Error Messages from Table T100</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DATA_TABLE</CMPNAME>
+     <SCONAME>CX_T100_MSG</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Clase de excepción con mensaje de error de la tabla T100</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DATA_TABLE</CMPNAME>
+     <SCONAME>EX_OUTPUT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Output data (old values)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DATA_TABLE</CMPNAME>
+     <SCONAME>EX_OUTPUT</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Datos de salida (valores viejos)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DATA_TABLE</CMPNAME>
+     <SCONAME>IM_INPUT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Input data (new values)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DATA_TABLE</CMPNAME>
+     <SCONAME>IM_INPUT</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Datos ingresados (valores nuevos)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_TABL_DEF</CMPNAME>
+     <SCONAME>CX_T100_MSG</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exception Class with Error Messages from Table T100</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_TABL_DEF</CMPNAME>
+     <SCONAME>CX_T100_MSG</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Clase de excepción con mensaje de error de la tabla T100</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_TABL_DEF</CMPNAME>
+     <SCONAME>EX_TABLE_DEFINITION</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type for Structure DD03P</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_TABL_DEF</CMPNAME>
+     <SCONAME>EX_TABLE_DEFINITION</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Tipo tabla para la estructura DD03P</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SAVE_LOG</CMPNAME>
+     <SCONAME>CX_T100_MSG</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exception Class with Error Messages from Table T100</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SAVE_LOG</CMPNAME>
+     <SCONAME>CX_T100_MSG</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Clase de excepción con mensaje de error de la tabla T100</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SAVE_LOG</CMPNAME>
+     <SCONAME>ZCX_SM30_SCDO</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>SAP Changed Document in SM30 Exception Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SAVE_LOG</CMPNAME>
+     <SCONAME>ZCX_SM30_SCDO</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Clase de excepción para el documento de cambio SAP en SM30</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

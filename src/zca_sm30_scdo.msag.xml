@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZCA_SM30_SCDO</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>SCDO SM30 Helper</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>S</SPRSL>
+     <ARBGB>ZCA_SM30_SCDO</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>No existe objeto de documento de cambio para &amp;1.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>S</SPRSL>
+     <ARBGB>ZCA_SM30_SCDO</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>La vista &amp;1 tiene varios objetos de modificación y no se sabe cual usar.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>S</SPRSL>
+     <ARBGB>ZCA_SM30_SCDO</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>El objecto &amp;1 y la vista &amp;2 no se encuentra relacionados.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>S</SPRSL>
+     <ARBGB>ZCA_SM30_SCDO</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>El objeto &amp;1 no fue generado.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>S</SPRSL>
+     <ARBGB>ZCA_SM30_SCDO</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>La función de actualización no fue encontrada.</TEXT>
+    </T100>
+   </T100>
+   <I18N_LANGS>
+    <LANGU>E</LANGU>
+   </I18N_LANGS>
+   <T100T>
+    <T100T>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCA_SM30_SCDO</ARBGB>
+     <STEXT>SCDO SM30 Helper</STEXT>
+    </T100T>
+   </T100T>
+   <T100_TEXTS>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>000</MSGNR>
+     <TEXT>Do not exist change document object for &amp;1.</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>001</MSGNR>
+     <TEXT>The view &amp;1 has multiple change document objects and do not know who use.</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>002</MSGNR>
+     <TEXT>The object &amp;1 and the viewname &amp;2 are not related.</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>003</MSGNR>
+     <TEXT>The object &amp;1 was not generated.</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>004</MSGNR>
+     <TEXT>The update function module was not found.</TEXT>
+    </item>
+   </T100_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
